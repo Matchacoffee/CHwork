@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="uglyeeeeeee~">
+    <meta name="author" content="QQ">
+
+    <title>Helo World</title>
+	<!-- script -->
+	<script src="javascripts/script.js"></script>
+    <!-- jQuery -->
+    <script src="javascripts/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="javascripts/bootstrap.min.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+	
+	<link href="https://rawgit.com/Nodws/bootstrap4-tagsinput/master/tagsinput.css" rel="stylesheet" />
+	<script src="https://rawgit.com/Nodws/bootstrap4-tagsinput/master/tagsinput.js"></script>
+
+    <!-- Custom CSS -->
+    <link href="stylesheets/1-col-portfolio.css" rel="stylesheet">
+
+	<style>
+		#hahaha{
+			background-image:url(images/pokemo-background.jpg);
+			background-size:cover;
+			background-repeat: no-repeat;
+			background-position: top;
+		}
+		.footertex{
+			color:white;
+			font-weight:bold;
+		}
+		.cont{
+			margin-right:10%;
+		}
+		#lala{
+			margin-top:300px;
+		}
+	</style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://images2.gamme.com.tw/news2/2014/74/63/p6CWnaWelKCW.jpg">不要點我拜託</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="http://tw.beanfun.com/maplestory/main.aspx" title="勸你別點">關於我們</a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#Modalist">文章列表</a>
+                    </li>
+					<li>
+                        <a href="#" id="userinfo" class="hidden" data-toggle="modal" data-target="#Modalusr" >用戶資料</a>
+                    </li>
+					<li>
+                        <a href="#" id="logout" class="hidden" >登出</a>
+                    </li>
+					<li>
+						<a href="#" id="addSomething" data-toggle="modal" data-target="#Modalpost" >新增文章</a>
+					</li>
+                    <li>
+                        <a href="#" id="login" data-toggle="modal" data-target="#Modalogin" >登入</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+			
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container" id="bored">
+
+        <!-- Page Heading -->
+        <div class="row" >
+            <div class="col-lg-6" >
+                <h1 class="page-header">留言
+                    <small>由新到舊</small>
+                </h1>
+            </div>
+			
+        </div>
+        <!-- /.row -->
+		
+		<!-- login -->
+		
+
+        <!-- Project One -->
+        <div class="row" id="mainlist">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://media.viralcham.com/wp-content/uploads/2015/05/dui.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Project One</h3>
+                <h4>Subheading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+		<hr>
+		<div class="modal fade " id="Modalogin" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-ms" >
+				<form >
+					<div class="modal-content" id="hahaha" >
+						<div class="modal-header"> 
+							輸入帳號密碼
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body" >
+							帳號<input type="text" name="account" id="account" placeholder="999999"/><br><br>
+							密碼<input type="password" name="password" id="password" placeholder="lalala"/><br><br>
+							<input type="button" id="login-sub" value="登入囉!!"/>
+						</div>
+						<div class="modal-footer">
+							<p class="footertex">貼心小提示 : 請注意大小寫</p>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<div class="modal fade " id="Modalusr" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-ms" >
+				<form >
+					<div class="modal-content" id="hahaha" >
+						<div class="modal-header"> 
+							歡迎
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body" >
+							<div class="row">
+								<div class="form-group" >
+									<label class="col-md-3 control-label" >UserName: </label>
+									<div class="col-md-9">
+										<label id="username"  ></label>
+									</div>
+								</div>
+								<div class="form-group" >
+									<label class="col-md-3 control-label" >Name: </label>
+									<div class="col-md-9">
+										<label id="Name"  ></label>
+									</div>
+								</div>
+								<div class="form-group" >
+									<label class="col-md-3 control-label" >Gender: </label>
+									<div class="col-md-9">
+										<label id="Gender"  ></label>
+									</div>
+								</div>
+								<div class="form-group" >
+									<label class="col-md-3 control-label" >Address: </label>
+									<div class="col-md-9">
+										<label id="Address"  ></label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<p class="footertex">貼心小提示 : 請注意個資</p>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<div class="modal fade " id="Modalpost" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<form class="form-horizontal" role="form">
+					<div class="modal-content" >
+						<div class="modal-header" style="text-align:center">
+							<img src="images/article.gif">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</div>
+						<div class="modal-body">
+							<div class="form-group" >
+								<label class="col-md-1 control-label" >Title </label>
+								<div class="col-md-11">
+									<input type="text" id="newTitle" class="form-control">
+								</div>
+							</div>
+							<div class="form-group" >
+								<label for="newTags" class="col-md-1 control-label">Tags </label>
+								<div class="col-md-11">
+									<input type="text" class="form-control" id="newTags" data-role="tagsinput">
+								</div>
+							</div>
+							<div class="form-group" >
+								<label class="col-md-1 control-label" >Content </label>
+								<div class="col-md-11">
+									<textarea class="form-control" id="newContent" rows="3"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer" >
+							<button type="button" id="senPost" class="btn btn-primary" >Send</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="Modalist" role="dialog" aria-hidden="true" >
+			<div class="modal-dialog ">
+				<div class="modal-content">
+					<div class="modal-header">
+						文章列表
+					</div>
+					<div class="modal-body" id="listTxt" >
+					</div>
+				</div>
+			</div>
+		</div>
+		
+        <hr>
+		
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; yeeeee~ 2017</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    
+	<script>
+		$(document).ready(function () {
+			App.init();
+		});
+	</script>
+
+</body>
+
+</html>
